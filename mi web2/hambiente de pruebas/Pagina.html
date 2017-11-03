@@ -1,0 +1,111 @@
+ 
+   <html lang="es">
+   <head>   
+
+   <meta charset="utf-8">
+    <meta name="description" content=" bienvedidos a Pokemon Go aca puedes encontrar coodenadas">
+    <link rel="shourcut icon" type="image/x-icon" href="img/pokemon.ico">
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css" type="text/css"/> 
+    </head> 
+
+     <title>Mundo Pokemon Go</title>
+     <img src="img/Unad.jpg" title="Equipos" alt="Sabiduria">
+    <body>
+
+
+        <div id ="contenedor"> 
+
+
+            <div id ="cabecera"> <center> <h1>Mundo Pokemon Go</h1></center> 
+
+            </div>
+            
+
+
+                <div id ="menu"> <a href="https://es-la.facebook.com/">link para ir a Face</a> </div> 
+                <div id ="izquierda"> <img src="img/Equipo Sabiduria2.jpg" title="Equipo Sabiduria" alt="Sabiduria"> </div> 
+                <div id ="derecha"> <center><p> Niantic, The Pokémon Company y Nintendo han lanzado una nueva campaña televisiva en Japón para publicitar Pokémon Go con motivo de la próxima celebración de Halloween. Se trata de tres vídeos que podéis ver a continuación:Con estos anuncios se da a conocer al público la llegada de nuevas criaturas, incluyendo algunas con hábitos nocturnos, de tal forma que los jugadores tienen nuevos retos por superar con este título para móviles.La actualización de Halloween</p> </center></div>
+                <div id ="izquierda1">
+
+                    <article> Hoy en dia se siguen utilizando aplicaciones para poder jugar Pokémon Go! desde la casa, y una de las cosas más interesantes que se puede hacer si tu usas este método de juego, es trasladarte a lugares específicos en los cuales poder atrapar a los más raros o exclusivos pokémon. Esto lo puedes hacer gracias a las coordenadas, solo debes de ingresarlas en tu aplicación que emula una ubicación diferente a la que estas. Puedes encontrarla en la opción de ubicación e ingresando las coordenadas que da cada mapa de cada pokémon especifico que puedes buscar en cada una de las zonas en las que estas buscando y atrapar pokémon raros.</article>
+
+                    <!DOCTYPE html>
+<html>
+  <head>
+    <title>Geolocation</title>
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=si">
+    <meta charset="utf-8">
+    <style>
+      
+      #map {
+        height: 60%;
+      }
+      
+      html, body {
+        height: 90%;
+        margin: 10;
+        padding: 50;
+      }
+    </style>
+  </head>
+  
+    <div id="map"></div>
+    <script>
+      
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 4.363, lng: -74.044},
+          zoom: 6
+        });
+        var infoWindow = new google.maps.InfoWindow({map: map});
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCgMOSXED1YDIXbAFWbpi8dvunlDUsQ5M&callback=initMap">
+    </script>
+  
+</html>
+                </div> 
+
+                <div id ="derecha2">
+                    <iframe width="550" height="255" src="https://www.youtube.com/embed/xRaMmkhMZPk" frameborder="0" gesture="media" allowfullscreen></iframe>
+                </div>                                         
+                <div id ="pie">
+
+                    <h1>Mundo Pokemon Go</h1>
+                    <center><a href="https://www.cerotec.net/estadisticas-1719/file:" title="detalles de las visitas"><img src="https://www.cerotec.net/contador.php?t=21&s=1&i=1719" alt="Contador de visitas y estadísticas"></a> <br><a href='https://www.cerotec.net' style='font-size:12px;' >Cerotec</a></center>
+                </div> 
+                                              
+                                              
+        </div> 
+    </body> 
+</html> 

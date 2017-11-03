@@ -1,0 +1,58 @@
+  body{
+
+        
+        background-image: url(http://www.hdfondos.org/file/28975/728x410/16:9/images-pokemon-go_1998165476.jpg);
+        
+        
+}
+
+
+#contenedor{ 
+        background-color:#EAEDED; 
+        border:2px solid #EAEDED; 
+        
+        background-color: #fff;
+}
+
+#cabecera{ 
+        background-color:#EAEDED; 
+        height:20%; 
+} 
+#menu{ 
+        height:8%; 
+        background-color:#EAEDED; 
+} 
+#izquierda{ 
+        height:50%;  
+        background-color:#EAEDED; 
+        float:left; 
+        width:50%; 
+} 
+#derecha{ 
+        height:50%; 
+        background-color:#EAEDED; 
+        float:right; 
+        width:50%; 
+}
+ 
+#izquierda1{ 
+        height:50%; 
+        background-color:#EAEDED; 
+        float:left; 
+        width:50%; 
+} 
+#derecha2{ 
+        height:50%; 
+        background-color:#EAEDED; 
+        float:right; 
+        width:50%; 
+}
+ 
+ 
+ 
+#pie{ 
+        height:20%; 
+        background-color:#EAEDED; 
+        clear:both; 
+
+}
